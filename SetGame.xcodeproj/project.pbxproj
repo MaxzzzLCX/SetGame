@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		7C5DE1642AC1881B0015C624 /* SetGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DE1632AC1881B0015C624 /* SetGameApp.swift */; };
-		7C5DE1662AC1881C0015C624 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DE1652AC1881C0015C624 /* ContentView.swift */; };
+		7C5DE1662AC1881C0015C624 /* SetGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DE1652AC1881C0015C624 /* SetGameView.swift */; };
 		7C5DE1682AC1881D0015C624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5DE1672AC1881D0015C624 /* Assets.xcassets */; };
 		7C5DE16B2AC1881D0015C624 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5DE16A2AC1881D0015C624 /* Preview Assets.xcassets */; };
+		7C5DE1722AC1887F0015C624 /* SetGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DE1712AC1887F0015C624 /* SetGameModel.swift */; };
+		7C5DE1742AC188A80015C624 /* SetGameVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DE1732AC188A80015C624 /* SetGameVM.swift */; };
+		7C5DE1762AC189410015C624 /* SetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DE1752AC189410015C624 /* SetCardView.swift */; };
+		7C5DE1782AC278E30015C624 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DE1772AC278E30015C624 /* AspectVGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C5DE1602AC1881B0015C624 /* SetGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5DE1632AC1881B0015C624 /* SetGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameApp.swift; sourceTree = "<group>"; };
-		7C5DE1652AC1881C0015C624 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7C5DE1652AC1881C0015C624 /* SetGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameView.swift; sourceTree = "<group>"; };
 		7C5DE1672AC1881D0015C624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C5DE16A2AC1881D0015C624 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7C5DE1712AC1887F0015C624 /* SetGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameModel.swift; sourceTree = "<group>"; };
+		7C5DE1732AC188A80015C624 /* SetGameVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameVM.swift; sourceTree = "<group>"; };
+		7C5DE1752AC189410015C624 /* SetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardView.swift; sourceTree = "<group>"; };
+		7C5DE1772AC278E30015C624 /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AspectVGrid.swift; path = ../../AspectVGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				7C5DE1632AC1881B0015C624 /* SetGameApp.swift */,
-				7C5DE1652AC1881C0015C624 /* ContentView.swift */,
+				7C5DE1652AC1881C0015C624 /* SetGameView.swift */,
+				7C5DE1772AC278E30015C624 /* AspectVGrid.swift */,
+				7C5DE1752AC189410015C624 /* SetCardView.swift */,
+				7C5DE1712AC1887F0015C624 /* SetGameModel.swift */,
+				7C5DE1732AC188A80015C624 /* SetGameVM.swift */,
 				7C5DE1672AC1881D0015C624 /* Assets.xcassets */,
 				7C5DE1692AC1881D0015C624 /* Preview Content */,
 			);
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C5DE1662AC1881C0015C624 /* ContentView.swift in Sources */,
+				7C5DE1662AC1881C0015C624 /* SetGameView.swift in Sources */,
+				7C5DE1762AC189410015C624 /* SetCardView.swift in Sources */,
+				7C5DE1782AC278E30015C624 /* AspectVGrid.swift in Sources */,
 				7C5DE1642AC1881B0015C624 /* SetGameApp.swift in Sources */,
+				7C5DE1722AC1887F0015C624 /* SetGameModel.swift in Sources */,
+				7C5DE1742AC188A80015C624 /* SetGameVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
