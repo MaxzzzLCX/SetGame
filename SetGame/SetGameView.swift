@@ -13,8 +13,8 @@ struct SetGameView: View {
     
     var body: some View {
         VStack{
+            Text(String(viewModel.matched))
             cards
-            
             Button("Draw 3 Cards"){
                 viewModel.drawCard()
             }
@@ -22,6 +22,10 @@ struct SetGameView: View {
         
         
     }
+    
+//    var score: some View{
+//        Text(viewModel.matched)
+//    }
     
     var cards: some View{
         
@@ -31,7 +35,6 @@ struct SetGameView: View {
                     viewModel.choose(card)
                 }
         }
-        
     }
 }
 

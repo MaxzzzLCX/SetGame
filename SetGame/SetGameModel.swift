@@ -15,7 +15,7 @@ struct DeckSetCard{
     
     var currentlyChoosenCards: Array<SetCard> = []
         
-    var matched: Int = 0
+    var matched: Int
     
     var numCardsChoosen: Int {
         var num: Int = 0
@@ -42,6 +42,9 @@ struct DeckSetCard{
             cards[visibleCardID[card_index]].isVisible = true
             visibleCards.append(convertToCard(visibleCardID[card_index]))
         }
+        
+        matched = 0
+
     }
     
     
@@ -70,6 +73,7 @@ struct DeckSetCard{
         if numCardsChoosen == 3 {
             if matching(currentlyChoosenCards[0],currentlyChoosenCards[1],currentlyChoosenCards[2]){
                 disselectAll(matched: true)
+                matched += 3
             } else{
                 disselectAll(matched: false)
             }
@@ -135,17 +139,20 @@ struct DeckSetCard{
     
     
     mutating func drawCard(){
-        for _ in 0...2{
-            var new_card_id: Int
-            
-            repeat{
-                new_card_id = Int.random(in: 0...80)
-            } while cards[new_card_id].isVisible || cards[new_card_id].isMatched
-            
-            cards[new_card_id].isVisible = true
-            visibleCards.append(cards[new_card_id])
-            print("Draw a new card of id \(new_card_id)")
+        if matched + visibleCards.count <= 78{
+            for _ in 0...2{
+                var new_card_id: Int
+                
+                repeat{
+                    new_card_id = Int.random(in: 0...80)
+                } while cards[new_card_id].isVisible || cards[new_card_id].isMatched
+                
+                cards[new_card_id].isVisible = true
+                visibleCards.append(cards[new_card_id])
+                print("Draw a new card of id \(new_card_id)")
+            }
         }
+        
     }
     
     

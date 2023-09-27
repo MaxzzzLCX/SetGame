@@ -44,6 +44,10 @@ class SetGameVM: ObservableObject{
         model.cards
     }
     
+    var matched: Int{
+        model.matched
+    }
+    
     var visibleCards: Array<SetCard>{
         return model.visibleCards
 //        var newVisibleCards: [SetCard] = []
